@@ -1,0 +1,136 @@
+/* General Styles for the Entire Page */
+html, body {
+    /* Ensure the background gradient fills the entire viewport */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    font-family: 'Arial', sans-serif; /* Use a clean, modern font */
+    color: #333; /* Default text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for Main Content */
+.container {
+    /* Center content and control its maximum width */
+        display: flex;
+        justify-content: center; /* Center children horizontally */
+        align-items: center; /* Center children vertically */ 
+}
+
+/* Styling for All Cards (Used on Both Pages) */
+.card {
+    border: none; /* Remove default border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); /* Subtle gradient for card background */
+    padding: 20px;
+}
+
+/* Password Page Styles */
+#password-page h1 {
+    /* Title Styling */
+    width: 400px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Add shadow for emphasis */
+    color: #007bff; /* Primary color for text */
+}
+
+#password-page input {
+    /* Styling for the password input field */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #007bff; /* Primary blue border */
+    text-align: center; /* Center the text inside the input */
+}
+
+#password-page input:focus {
+    /* Focus effect for input */
+    border-color: #0056b3; /* Darker blue border on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+.btn {
+    /* Styling for buttons (Submit button on Password Page) */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+.btn:hover {
+    /* Hover effect for buttons */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add a more prominent shadow */
+}
+
+/* Quote Board Section */
+#quote-board h1 {
+    /* Title styling for the Quote Board */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#filter-select {
+    /* Styling for the dropdown filter */
+    max-width: 400px; /* Limit the width of the dropdown */
+    margin: 20px auto; /* Center the dropdown */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #007bff; /* Primary blue border */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth focus effect */
+}
+
+#filter-select:focus {
+    /* Focus effect for dropdown */
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+#quotes-container {
+    /* Styling for the scrollable box */
+    max-height: 1000px; /* Increase the height for more content */
+    width: 1000px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Add padding inside the box */
+    border-radius: 15px; /* Rounded corners */
+    border: 2px solid #007bff; /* Blue border */
+    background-color: #f8f9fa; /* Light background for contrast */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 20px; /* Space above the box */
+    margin-left: auto; /* Push the box to the right */
+    margin-right: auto; /* Push the box back to the left */
+}
+
+/* Individual Quote Styles */
+.quote {
+    /* Styling for each quote box */
+    border: 2px solid #17a2b8; /* Teal border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Space inside the quote box */
+    background: linear-gradient(135deg, #f9f9f9 0%, #e0f7fa 100%); /* Soft gradient background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add depth with a shadow */
+    margin-bottom: 15px; /* Space between quotes */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.quote:hover {
+    /* Hover effect for each quote */
+    transform: scale(1.05); /* Slightly enlarge the quote */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Add a more prominent shadow */
+}
+
+.quote h3 {
+    /* Styling for the quote text */
+    font-size: 1.5rem; /* Larger text size */
+    font-weight: bold;
+    color: #007bff; /* Primary blue color */
+    margin-bottom: 10px; /* Space below the quote text */
+}
+
+.quote p {
+    /* Styling for the author text */
+    font-size: 1.2rem; /* Slightly smaller than the quote */
+    color: #495057; /* Muted color for contrast */
+    font-style: italic; /* Italicize the author name */
+}
