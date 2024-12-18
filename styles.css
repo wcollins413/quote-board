@@ -1,4 +1,4 @@
-/* General Styles for the Entire Page */
+/* General Styles */
 html, body {
     height: 100%;
     margin: 0;
@@ -13,29 +13,23 @@ html, body {
 
 .container {
     width: 100%;
-    max-width: 90%; /* Adjust max width for smaller screens */
-    margin-top: 0;
+    max-width: 500px; /* Adjusted for smaller screens */
+    margin: 0 auto;
 }
 
-/* Styling for All Cards (Used on Both Pages) */
+/* Card Style */
 .card {
     border: none;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
     padding: 20px;
+    width: 100%; /* Full width on smaller screens */
 }
 
-/* Password Page Styles */
-#password-page h1 {
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    color: #007bff;
-}
-
+/* Password Input Field */
 #password-page input {
-    width: 100%; /* Make input field stretch to full width */
-    max-width: 400px; /* Limit input field width */
-    margin: 0 auto; /* Center the input */
+    width: 100%; /* Responsive width for small devices */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     border: 2px solid #007bff;
@@ -47,45 +41,10 @@ html, body {
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
 }
 
-.btn {
-    width: 100%; /* Stretch button on smaller screens */
-    max-width: 400px; /* Limit button width */
-    margin: 10px auto; /* Add spacing */
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* Quote Board Section */
-#quote-board h1 {
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    color: #007bff;
-    margin-bottom: 20px;
-}
-
-#filter-select {
-    width: 100%;
-    max-width: 400px;
-    margin: 20px auto;
-    border-radius: 8px;
-    border: 2px solid #007bff;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-#filter-select:focus {
-    border-color: #0056b3;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
-}
-
+/* Quotes Container */
 #quotes-container {
-    max-height: 600px;
+    max-height: 500px;
     width: 100%;
-    max-width: 800px; /* Adjust container width for smaller screens */
     overflow-y: auto;
     padding: 20px;
     border-radius: 15px;
@@ -94,52 +53,10 @@ html, body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Individual Quote Styles */
-.quote {
-    border: 2px solid #17a2b8;
-    border-radius: 15px;
-    padding: 20px;
-    background: linear-gradient(135deg, #f9f9f9 0%, #e0f7fa 100%);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    margin-bottom: 15px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.quote:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
-
-.quote h3 {
-    font-size: 1.2rem; /* Reduce font size on smaller screens */
-    font-weight: bold;
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.quote p {
-    font-size: 1rem; /* Reduce font size for author name */
-    color: #495057;
-    font-style: italic;
-}
-
-/* Responsive Design: Media Query for Smaller Screens */
+/* Responsive Adjustments */
 @media screen and (max-width: 768px) {
-    #quotes-container {
-        max-height: 500px; /* Reduce container height */
-        max-width: 90%; /* Ensure it fits on smaller screens */
-    }
-
     #password-page input,
-    .btn {
-        max-width: 90%; /* Ensure inputs and buttons fit within the screen */
-    }
-
-    .quote h3 {
-        font-size: 1rem; /* Adjust font size for quotes */
-    }
-
-    .quote p {
-        font-size: 0.9rem; /* Adjust font size for author name */
+    #quotes-container {
+        max-width: 90%; /* Fit within smaller screens */
     }
 }
